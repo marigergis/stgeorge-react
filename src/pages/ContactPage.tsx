@@ -1,0 +1,9 @@
+const ContactPage = () => {
+    return (
+      <section>
+        <h1>Student List Page</h1>
+      </section>
+    );
+};
+export default ContactPage;
+  
