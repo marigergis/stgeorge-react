@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "/stgeorge-react/",
+  "homepage": "https://marigergis.github.io/stgeorge-react/",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",

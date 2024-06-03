@@ -1,7 +1,7 @@
 const ContactPage = () => {
     return (
       <section>
-        <h1>Student List Page</h1>
+        <h1>Contact Us</h1>
       </section>
     );
 };
