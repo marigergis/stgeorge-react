@@ -1,30 +1,33 @@
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import { Link, Outlet } from "react-router-dom";
+// import "./App.css";
+// import { Link, Outlet } from "react-router-dom";
+
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import { Outlet } from "react-router"
+import NavBar from './nav/NavBar';
+
+// function App() {
+//   return (
+//     <>
+//       <nav>
+//         <Link to="/stgeorge-react/">Home</Link>
+//         {" | "}
+//         <Link to="/stgeorge-react/arabic">Arabic</Link>
+//       </nav>
+
+//       <Outlet />
+//     </>
+//   );
+// }
 
 function App() {
+
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="container">
+        <NavBar /> 
+        <Outlet />
       </div>
-      <h1>Vite + React</h1>
-
-      <nav>
-        <Link to="/stgeorge-react/">Home</Link>
-        {" | "}
-        <Link to="/stgeorge-react/contact">Contact</Link>
-      </nav>
-
-      <Outlet />
-
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
     </>
   );
 }

@@ -1,0 +1,9 @@
+https://www.youtube.com/watch?v=Bk28snjHr7c
+
+Deploy Vite React App to GitHub Pages
+https://www.vddeveloper.online/blog/vite-react-deploy-github
+
+Vite React App with Routes Deployed on Github | Reload error resolved!
+https://youtube.com/watch?v=uEEj2c3_ydg
+https://github.com/ErickKS/vite-react-router
+
