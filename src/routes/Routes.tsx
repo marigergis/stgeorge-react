@@ -1,5 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom';
-import HomePage from "../pages/Home";
+import HomePage from "../pages/HomePage";
 import App from "../App";
 import ArabicPage from "../pages/Arabic";
 import EnglishPage from "../pages/English";
@@ -24,9 +24,9 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/stgeorge-react/",
-        element: <HomePage title={"Hello, welcome to students-react with Typescript!"} 
-        subtitle={"You can view some of your favorite students here."}>
-          Surely, school is fun.
+        element: <HomePage title={"Medhat مدحت 🇪🇬"} 
+        subtitle={""}>
+          Ethiopia, Egypt, Canada
         </HomePage>
       },
       {
