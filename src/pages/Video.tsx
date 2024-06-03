@@ -1,7 +1,7 @@
 const VideoPage = () => {
   return (
     <section>
-        <h3>YouTube</h3>
+        <h3>Video</h3>
         <ul>
           <li>
             <a
