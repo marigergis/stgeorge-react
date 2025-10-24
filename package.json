@@ -1,9 +1,9 @@
 {
-  "name": "stgeorge-react",
+  "name": "marigergis.github.io",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://marigergis.github.io/stgeorge-react/",
+  "homepage": "https://marigergis.github.io",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",

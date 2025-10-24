@@ -4,7 +4,7 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark p-3">
     <div className="container-fluid">
-      <Link className="navbar-brand" to="/stgeorge-react/">MEDHAT مدحت</Link>
+      <Link className="navbar-brand" to="/">MEDHAT مدحت</Link>
       <button
         className="navbar-toggler"
         type="button"
@@ -20,13 +20,13 @@ const NavBar = () => {
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
         <ul className="navbar-nav ms-auto">
           <li className="nav-item">
-            <Link className="nav-link mx-2" to="/stgeorge-react/arabic">Arabic</Link>
+            <Link className="nav-link mx-2" to="/arabic">Arabic</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link mx-2" to="/stgeorge-react/english">English</Link>
+            <Link className="nav-link mx-2" to="/english">English</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link mx-2" to="/stgeorge-react/cooking">Cooking</Link>
+            <Link className="nav-link mx-2" to="/cooking">Cooking</Link>
           </li>
           <li className="nav-item dropdown">
             <a
@@ -38,17 +38,17 @@ const NavBar = () => {
               aria-expanded="false"
             > Other</a>
             <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
-              <li><Link className="dropdown-item" to="/stgeorge-react/archives">Archives</Link></li>
-              <li><Link className="dropdown-item" to="/stgeorge-react/church">Church</Link></li>
-              <li><Link className="dropdown-item" to="/stgeorge-react/handyman">Handyman</Link></li>                  
-              <li><a className="dropdown-item" href="/stgeorge-react/mvp">MVP</a></li>
+              <li><Link className="dropdown-item" to="/archives">Archives</Link></li>
+              <li><Link className="dropdown-item" to="/church">Church</Link></li>
+              <li><Link className="dropdown-item" to="/handyman">Handyman</Link></li>                  
+              <li><a className="dropdown-item" href="/mvp">MVP</a></li>
               <li><a className="dropdown-item" href="recruiters.html">Recruiters</a></li>
-              <li><Link className="dropdown-item" to="/stgeorge-react/travel">Travel</Link></li>
-              <li><Link className="dropdown-item" to="/stgeorge-react/tv">TV</Link></li>
-              <li><Link className="dropdown-item" to="/stgeorge-react/video">Video</Link></li>
-              <li><Link className="dropdown-item" to="/stgeorge-react/music">Music</Link></li>
-              <li><Link className="dropdown-item" to="/stgeorge-react/images">Images</Link></li>
-              <li><Link className="dropdown-item" to="/stgeorge-react/events-calendar">Events</Link></li>
+              <li><Link className="dropdown-item" to="/travel">Travel</Link></li>
+              <li><Link className="dropdown-item" to="/tv">TV</Link></li>
+              <li><Link className="dropdown-item" to="/video">Video</Link></li>
+              <li><Link className="dropdown-item" to="/music">Music</Link></li>
+              <li><Link className="dropdown-item" to="/images">Images</Link></li>
+              <li><Link className="dropdown-item" to="/events-calendar">Events</Link></li>
             </ul>
           </li>
         </ul>

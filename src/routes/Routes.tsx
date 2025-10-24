@@ -20,7 +20,7 @@ import EventsCalendar from '../pages/EventsCalendar';
  */
 export const router = createBrowserRouter([
   {
-    path: "/stgeorge-react/",
+    path: "/",
     element: <App />,
     children: [
       {
@@ -29,59 +29,59 @@ export const router = createBrowserRouter([
         // subtitle={""}>
         //   Ethiopia, Egypt, Canada
         // </HomePage>
-        path: "/stgeorge-react/",
+        path: "/",
         element: <EventsCalendar />,
       },
       {
-        path: "/stgeorge-react/arabic",
+        path: "/arabic",
         element: <ArabicPage />,
       },
       {
-        path: "/stgeorge-react/english",
+        path: "/nglish",
         element: <EnglishPage />,
       },
       {
-        path: "/stgeorge-react/cooking",
+        path: "/cooking",
         element: <CookingPage />,
       },
       {
-        path: "/stgeorge-react/archives",
+        path: "/archives",
         element: <ArchivesPage />,
       },
       {
-        path: "/stgeorge-react/church",
+        path: "/church",
         element: <ChurchPage />,
       },
       {
-        path: "/stgeorge-react/handyman",
+        path: "/handyman",
         element: <HandymanPage />,
       },
       {
-        path: "/stgeorge-react/mvp",
+        path: "/mvp",
         element: <MVPPage />,
       },
       {
-        path: "/stgeorge-react/travel",
+        path: "/travel",
         element: <TravelPage />,
       },
       {
-        path: "/stgeorge-react/tv",
+        path: "/tv",
         element: <TVPage />,
       },
       {
-        path: "/stgeorge-react/video",
+        path: "/video",
         element: <VideoPage />,
       },
       {
-        path: "/stgeorge-react/music",
+        path: "/music",
         element: <MusicPage />,
       },
       {
-        path: "/stgeorge-react/events-calendar",
+        path: "/events-calendar",
         element: <EventsCalendar />,
       },
       {
-        path: "/stgeorge-react/images",
+        path: "/images",
         element: <ImagesPage />,
       },
     ],
