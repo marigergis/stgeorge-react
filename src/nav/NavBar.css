@@ -1,0 +1,44 @@
+.banner-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px 0;
+}
+
+.banner-container a {
+  display: block;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.banner-container a:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.banner-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Maroon navbar background */
+.navbar-maroon {
+  background-color: #663030 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .banner-image {
+    max-height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-image {
+    max-height: 100px;
+  }
+}
