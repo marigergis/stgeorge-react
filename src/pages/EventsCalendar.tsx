@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './EventsCalendar.css';
+import { API_ENDPOINTS } from '../config/api';
 
 interface Event {
   eventId: number;
@@ -29,7 +30,7 @@ const EventsCalendar: React.FC = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await fetch('https://localhost:7031/events/current');
+        const response = await fetch(API_ENDPOINTS.EVENTS_CURRENT);
         if (!response.ok) {
           throw new Error('Failed to fetch events');
         }
