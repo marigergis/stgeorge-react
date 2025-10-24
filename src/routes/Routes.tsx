@@ -24,11 +24,13 @@ export const router = createBrowserRouter([
     element: <App />,
     children: [
       {
+        // path: "/stgeorge-react/",
+        // element: <HomePage title={"Medhat مدحت 🇪🇬"} 
+        // subtitle={""}>
+        //   Ethiopia, Egypt, Canada
+        // </HomePage>
         path: "/stgeorge-react/",
-        element: <HomePage title={"Medhat مدحت 🇪🇬"} 
-        subtitle={""}>
-          Ethiopia, Egypt, Canada
-        </HomePage>
+        element: <EventsCalendar />,
       },
       {
         path: "/stgeorge-react/arabic",
