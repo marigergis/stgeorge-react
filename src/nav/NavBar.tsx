@@ -48,6 +48,7 @@ const NavBar = () => {
               <li><Link className="dropdown-item" to="/stgeorge-react/video">Video</Link></li>
               <li><Link className="dropdown-item" to="/stgeorge-react/music">Music</Link></li>
               <li><Link className="dropdown-item" to="/stgeorge-react/images">Images</Link></li>
+              <li><Link className="dropdown-item" to="/stgeorge-react/events-calendar">Events</Link></li>
             </ul>
           </li>
         </ul>

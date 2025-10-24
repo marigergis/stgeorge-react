@@ -13,6 +13,7 @@ import TVPage from "../pages/TV";
 import VideoPage from "../pages/Video";
 import ImagesPage from "../pages/Images";
 import MusicPage from "../pages/Music";
+import EventsCalendar from '../pages/EventsCalendar';
 
 /**
  * The router configuration for the application.
@@ -72,6 +73,10 @@ export const router = createBrowserRouter([
       {
         path: "/stgeorge-react/music",
         element: <MusicPage />,
+      },
+      {
+        path: "/stgeorge-react/events-calendar",
+        element: <EventsCalendar />,
       },
       {
         path: "/stgeorge-react/images",
