@@ -116,7 +116,7 @@ const EventsCalendar: React.FC = () => {
 
   const groupedEvents = groupEventsByDate(events);
 
-   return (
+return (
     <div className="events-calendar">
       <table className="events-table">
         <tbody>
@@ -130,7 +130,12 @@ const EventsCalendar: React.FC = () => {
                   <td className="time-column">
                     {formatTime(event.eventFrom)} - {formatTime(event.eventTo)}
                   </td>
-                  <td className="title-column">{event.activity}</td>
+                  <td className="title-column">
+                    {event.activity}
+                    {event.moreInfo && (
+                      <span className="more-info"> {event.moreInfo}</span>
+                    )}
+                  </td>
                   <td className="icon-column">
                     {getIconUrl(event.activity) && (
                       <img src={getIconUrl(event.activity)!} alt="Event icon" className="event-icon" />
