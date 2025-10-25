@@ -27,16 +27,16 @@
 }
 
 .time-column {
-  width: 7%;
+  width: 10%;
   /* white-space: nowrap; */
 }
 
 .title-column {
-  width: 50%;
+  width: 45%;
 }
 
 .icon-column {
-  width: 8%;
+  width: 10%;
   text-align: center;
 }
 
