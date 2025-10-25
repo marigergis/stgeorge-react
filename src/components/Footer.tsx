@@ -28,6 +28,7 @@ const Footer: React.FC = () => {
           <a href="mailto:donation@stgeorge.ca">donation@stgeorge.ca</a>.
         </div>
 
+        <hr />
         <div>
           You received this message because you subscribed to the church email distribution list.
           To unsubscribe from this group and stop receiving emails, simply reply to this message and request removal.
