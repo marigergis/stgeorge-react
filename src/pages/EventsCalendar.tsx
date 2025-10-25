@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import './EventsCalendar.css';
+import './EventsCalendar.tsx.css';
 import { API_ENDPOINTS } from '../config/api';
+import Footer from '../components/Footer'; // Import the Footer component
+
 
 interface Event {
   eventId: number;
@@ -70,7 +72,7 @@ const EventsCalendar: React.FC = () => {
       return 'Invalid Date';
     }
     
-    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun'];
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     
     return `${days[date.getDay()]} ${months[date.getMonth()]} ${date.getDate()} ${date.getFullYear()}`;
@@ -123,7 +125,7 @@ return (
           {Object.entries(groupedEvents).map(([date, dateEvents]) => (
             <React.Fragment key={`date-${date}`}>
               <tr className="date-header">
-                <td colSpan={5}>{formatDate(date)}</td>
+                <td colSpan={3}>{formatDate(date)}</td> {/* Adjusted colspan to 4 */}
               </tr>
               {dateEvents.map((event) => (
                 <tr key={`event-${event.eventId}`} className="event-row">
@@ -135,28 +137,20 @@ return (
                     {event.moreInfo && (
                       <span className="more-info"> {event.moreInfo}</span>
                     )}
+                    {event.priest && <span> with {event.priest}</span>} {/* Updated to include priest's name */}
                   </td>
                   <td className="icon-column">
                     {getIconUrl(event.activity) && (
                       <img src={getIconUrl(event.activity)!} alt="Event icon" className="event-icon" />
                     )}
                   </td>
-                  <td className="location-column">
-                    {event.locationUrl ? (
-                      <a href={event.locationUrl} target="_blank" rel="noopener noreferrer">
-                        {event.church}
-                      </a>
-                    ) : (
-                      event.church
-                    )}
-                  </td>
-                  <td className="priest-column">{event.priest || ''}</td>
                 </tr>
               ))}
             </React.Fragment>
           ))}
         </tbody>
       </table>
+      <Footer /> {/* Add the Footer component here */}
     </div>
   );
 };

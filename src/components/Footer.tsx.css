@@ -1,0 +1,16 @@
+.footer {
+  background-color: #f8f9fa; /* Change as needed */
+  padding: 20px;
+  text-align: left;
+  font-size: smaller;
+  margin-top: 10px;
+}
+
+.footer-content {
+  color: #333; /* Change text color as needed */
+}
+
+.footer div hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
