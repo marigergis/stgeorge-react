@@ -27,12 +27,12 @@
 }
 
 .time-column {
-  width: 10%;
-  white-space: nowrap;
+  width: 7%;
+  /* white-space: nowrap; */
 }
 
 .title-column {
-  width: 35%;
+  width: 50%;
 }
 
 .icon-column {
@@ -49,10 +49,6 @@
 .location-column {
   width: 35%;
   color: #d32f2f;
-}
-
-.priest-column {
-  width: 12%;
 }
 
 .loading,

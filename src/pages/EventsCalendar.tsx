@@ -125,7 +125,7 @@ return (
           {Object.entries(groupedEvents).map(([date, dateEvents]) => (
             <React.Fragment key={`date-${date}`}>
               <tr className="date-header">
-                <td colSpan={3}>{formatDate(date)}</td> {/* Adjusted colspan to 4 */}
+                <td colSpan={4}>{formatDate(date)}</td> {/* Updated colspan to 4 */}
               </tr>
               {dateEvents.map((event) => (
                 <tr key={`event-${event.eventId}`} className="event-row">
@@ -137,11 +137,20 @@ return (
                     {event.moreInfo && (
                       <span className="more-info"> {event.moreInfo}</span>
                     )}
-                    {event.priest && <span> with {event.priest}</span>} {/* Updated to include priest's name */}
+                    {event.priest && <span> with {event.priest}</span>}
                   </td>
                   <td className="icon-column">
                     {getIconUrl(event.activity) && (
                       <img src={getIconUrl(event.activity)!} alt="Event icon" className="event-icon" />
+                    )}
+                  </td>
+                  <td className="location-column">
+                    {event.locationUrl ? (
+                      <a href={event.locationUrl} target="_blank" rel="noopener noreferrer">
+                        {event.church}
+                      </a>
+                    ) : (
+                      event.church
                     )}
                   </td>
                 </tr>
@@ -150,7 +159,7 @@ return (
           ))}
         </tbody>
       </table>
-      <Footer /> {/* Add the Footer component here */}
+      <Footer />
     </div>
   );
 };
