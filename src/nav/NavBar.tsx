@@ -15,7 +15,7 @@ const NavBar = () => {
       </div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark p-3 navbar-maroon">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">St. George Coptic Orthodox Church<br/> كنيسة القديس جاورجيوس القبطية الأرثوذكسية</Link>
+          <Link className="navbar-brand" to="/">St. George Coptic Orthodox Church<br/> كنيسة مار جرجس القبطية الأرثوذكسية</Link>
           {/* <button
             className="navbar-toggler"
             type="button"
